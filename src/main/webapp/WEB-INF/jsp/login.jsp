@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css"/>
-        <title>Connexion Pay My Buddy</title>
+        <title>login</title>
 </head>
 <body>
 <form method="post" action="traitement.php">
@@ -38,7 +38,7 @@
         </p>
 
         <p>
-            <a href="Register.html">New member ?</a>
+            <a href="register">New member ?</a>
         </p>
 
     </fieldset>
