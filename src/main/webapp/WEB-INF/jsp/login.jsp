@@ -24,9 +24,9 @@
             <input type="password" autofocus required maxlength="16" placeholder="password"/>
 
         </p>
-  <a href="accueil">
-        <input type="submit" value="Login"/>
-      </a>
+
+        <input type="submit" value="Login" <a href="accueil"></a>
+
 
         <p>
 

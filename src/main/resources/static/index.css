@@ -1,40 +1,44 @@
-
+body{
+background-color:rgb(113, 243, 145);
+position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:auto;
+    border: 8px green double;
+    transform: translate(-50%, -50%);
+    height:500px;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 6px 6px 0px blue;
+}
 
 p
 {
 color:green;
 }
 
-input
+.form.input
 {
 color: #006eff;
 }
 
 fieldset
 {
+background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin:auto;
     border: 8px green double;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 230px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 6px 6px 0px blue;
-
-
-    background-color: white;
 }
 
-a
+label
 {
 color: #006eff;
-}
-
-form
-{
-    margin:auto;
-    width: 500px;
-
 }
 
 legend
