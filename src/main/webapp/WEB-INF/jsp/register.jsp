@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+  <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,37 +10,44 @@
   <title>registration</title>
 </head>
 <body>
-<form method="post" action="traitement.php"></form>
+<form:form action="registration" method="post" modelAttribute="registrationForm">
 
 <fieldset>
   <legend>REGISTER Pay My Buddy</legend>
 
   <p>
-    <input type="First name" name="First name" id="First name" autofocus required maxlength="30" placeholder="First name"/>
+    <form: input type="firstName" name="firstName" id="firstName" autofocus required maxlength="30" placeholder="firstName"/>
+    <label for="floatingInput">First Name</label>
   </p>
 
   <p>
-
-    <input type="Last name" name="Last name" id="Last name" autofocus required maxlength="30" placeholder="Last name"/>
-
+    <form: input type="lastName" name="lastName" id="lastName" autofocus required maxlength="30" placeholder="lastName"/>
+    <label for="floatingInput">Last Name</label>
   </p>
 
   <p>
-    <input type="email" name="email" id="email" autofocus required maxlength="30" placeholder="Email"/>
+    <form: input type="email" name="email" id="email" autofocus required maxlength="30" placeholder="Email"/>
+    <label for="floatingInput">Email address</label>
   </p>
 
   <p>
-    <input type="password" autofocus required maxlength="16" placeholder="password"/>
+    <form: input type="password" autofocus required maxlength="16" placeholder="password"/>
+    <label for="floatingPassword">Password</label>
   </p>
 
   <p>
-    <input type="password" autofocus required maxlength="16" placeholder="Comfirm password"/>
+    <form: input type="confirmPassword" autofocus required maxlength="16" placeholder="confirmPassword"/>
+    <label for="floatingPassword">Confirm Password</label>
   </p>
 
+  <label>
   <input type="submit" value="REGISTER"/>
+  </label>
 
-
+  <form:button class="w-100 btn btn-lg btn-primary" type="submit">Register</form:button>
+                <p class="mt-5 mb-3 text-muted"></p>
 
 </fieldset>
+</form:form>
 </body>
 </html>

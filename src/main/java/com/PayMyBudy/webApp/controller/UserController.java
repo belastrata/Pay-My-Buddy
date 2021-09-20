@@ -38,8 +38,10 @@ public class UserController {
         return new ModelAndView("register", "registrationForm", new RegistrationForm());
     }
 
-
-
+@GetMapping("/accueil")
+    public ModelAndView HomePages(){
+        return new ModelAndView("accueil","AccueilForm", new AccueilForm());
+}
 
 }
 

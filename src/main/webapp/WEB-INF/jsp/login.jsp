@@ -15,9 +15,7 @@
 
         <p>
 
-
             <input type="email" name="email" id="email" autofocus required maxlength="30" placeholder="Email"/>
-
 
         </p>
 
@@ -26,14 +24,13 @@
             <input type="password" autofocus required maxlength="16" placeholder="password"/>
 
         </p>
-
+  <a href="accueil">
         <input type="submit" value="Login"/>
+      </a>
 
         <p>
 
             <input type="checkbox"/> Remember me
-
-
 
         </p>
 
