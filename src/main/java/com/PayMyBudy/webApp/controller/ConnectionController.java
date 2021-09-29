@@ -10,13 +10,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConnectionController {
     @GetMapping()
     public ModelAndView getAddConnectionForm(Model model) {
-        return new ModelAndView("add-connection", "addConnectionForm", new AddConnectionForm());
+        return new ModelAndView("addconnection", "addConnectionForm", new AddConnectionForm());
     }
     @PostMapping()
     public ModelAndView addConnection(@ModelAttribute("addConnectionForm") AddConnectionForm form) {
         ConnectionController connectionService = new ConnectionController();
         connectionService.addConnection(form);
-        return new ModelAndView("add-connection", "addConnectionForm", new AddConnectionForm());
+        return new ModelAndView("addconnection", "addConnectionForm", new AddConnectionForm());
     }
 
 }

@@ -16,7 +16,6 @@ import java.util.Optional;
         return findUserByMail("String s");
     }
 
-
 }
 
 

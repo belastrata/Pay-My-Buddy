@@ -7,6 +7,6 @@ import java.util.List;
 public class TransferService {
 
     public static List<Transfer> findTransactions() {
-        return null;
+        return findTransactions() ;
     }
 }
