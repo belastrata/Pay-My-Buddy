@@ -19,13 +19,14 @@ public class AuthenticationService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
+
     public AuthenticationService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        Optional<User> user = UserRepository.findUserByMail(s);
+        Optional<User> user = userRepository.findUserByMail(s);
 
         if (user.isPresent()) {
 

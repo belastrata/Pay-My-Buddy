@@ -11,7 +11,7 @@
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
         <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
+        <link href="index2.css" rel="stylesheet">
       </head>
 
       <body>
@@ -63,3 +63,5 @@
             </div>
           </div>
         </div>
+        </body>
+        </html>

@@ -14,6 +14,5 @@ import java.util.List;
 @Repository
 public interface ConnectionRepository extends CrudRepository<Connection,Integer> {
     List<Connection> findConnectionsByUser1Email(String email);
-
     }
 

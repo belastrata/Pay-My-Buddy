@@ -23,7 +23,7 @@ public class ConnectionService {
     public List<String> findConnectionsEmail() {
 
         org.springframework.security.core.userdetails.User springUser = (org.springframework.security.core.userdetails.User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        User connectedUser = UserRepository.findUserByMail(springUser.getUsername())
+        User connectedUser = userRepository.findUserByMail(springUser.getUsername())
                 .orElseThrow(() -> new RuntimeException("user with email  not found"));
         return connectionRepository.findConnectionsByUser1Email(connectedUser.getEmail()).stream().map(Connection::getUser2).map(User::getEmail).collect(Collectors.toList());
 
@@ -31,11 +31,11 @@ public class ConnectionService {
 
     public void addConnection(final AddConnectionForm form) {
 
-        User user = UserRepository
+        User user = userRepository
                 .findUserByMail(form.getEmail())
                 .orElseThrow(() -> new RuntimeException("user with email " + form.getEmail() + " not found"));
         org.springframework.security.core.userdetails.User springUser = (org.springframework.security.core.userdetails.User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        User connectedUser = UserRepository.findUserByMail(springUser.getUsername())
+        User connectedUser = userRepository.findUserByMail(springUser.getUsername())
                 .orElseThrow(() -> new RuntimeException("user with email  not found"));
         Connection connection = new Connection();
         connection.setUser1(connectedUser);
