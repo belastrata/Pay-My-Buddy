@@ -15,8 +15,6 @@ import java.util.Optional;
     @Query(value="SELECT u FROM User u LEFT JOIN FETCH u.connections WHERE u.email=:email ")
     public Optional<User> findUserByMail(String email);
 
-
-
 }
 
 

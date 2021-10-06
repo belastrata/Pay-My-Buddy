@@ -41,7 +41,7 @@
                         <li class="navbar-item">
                             <a href="login.jsp" class="navbar-link">
                                 <i class="fas fa-home navbar-icone"></i>
-                                <span class="navbar-title">Sortir</span>
+                                <span class="navbar-title">Sortie</span>
                             </a>
                         </li>
 
