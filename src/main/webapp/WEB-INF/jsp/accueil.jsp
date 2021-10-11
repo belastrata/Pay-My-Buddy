@@ -14,43 +14,39 @@
 </head>
 
 <body>
-<div class="jubotron big-baner" style="height: 500px; padding-top: 150px;">
 
-    <div class="container-fluid">
-        <div class="row">
-
-
-
-            <nav>
-                <nav class="navbar">
-                    <ul class="navbar-menu">
-                        <li class="navbar-item logo">
-                            <a href="register.jsp" class="navbar-link">
-                                <i class="fas fa-home navbar-icone"></i>
-                                <span class="navbar-title">Inscription/Connexion</span>
-
-                            </a>
-
-                        </li>
-                        <li class="navbar-item">
-                            <a href="addconnection.jsp" class="navbar-link">
-                                <i class="fas fa-home navbar-icone"></i>
-                                <span class="navbar-title">Connection</span>
-                            </a>
-
-                        <li class="navbar-item">
-                            <a href="login.jsp" class="navbar-link">
-                                <i class="fas fa-home navbar-icone"></i>
-                                <span class="navbar-title">Sortie</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </nav>
-
-        </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="addconnection">Connection</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Pay My Buddy</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-</div>
+  </div>
+</nav>
+
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
 </body>
 </html>
