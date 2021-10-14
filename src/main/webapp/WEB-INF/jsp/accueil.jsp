@@ -17,20 +17,20 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand" href="addconnection">Connection</a>
+    <a class="navbar-brand" href="">Pay My Buddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
+          <a class="nav-link active" aria-current="page" href="addconnection">Connection</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="register">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Pay My Buddy</a>
+          <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Accueil</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -42,6 +42,26 @@
 </nav>
 
 
+
+<div class="container">
+    <div class="row">
+ <div class="col-lg-offset-8 col-lg-4">
+
+        <h2>Transferer votre argent</h2>
+       </div>
+    </div>
+    <div class="row">
+            <div class="col-lg-offset-6 col-lg-4">
+            <img src="man-smiles2.png">
+            </div>
+             <div class="row">
+                    <div class="col-lg-offset-5 col-lg-7">
+                    <h1>Bienvenue sur Pay My Buddy</h1>
+                    </div>
+                </div>
+
+        </div>
+</div>
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
