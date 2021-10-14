@@ -63,7 +63,8 @@
               </div>
 
               <div>
-                <button type="submit" class="contact-us">Add connection</button>
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">Add connection</button>
+                                          </br>
               </div>
             </form:form>
 
