@@ -46,18 +46,19 @@
 <div class="container">
     <div class="row">
  <div class="col-lg-offset-8 col-lg-4">
+ <h1>Bienvenue sur Pay My Buddy</h1>
 
-        <h2>Transferer votre argent</h2>
        </div>
     </div>
+    <div class="row">
+     <div class="col-lg-offset-5 col-lg-7">
+     <h2>Transferer votre argent</h2>
+     </div>
     <div class="row">
             <div class="col-lg-offset-6 col-lg-4">
             <img src="man-smiles2.png">
             </div>
-             <div class="row">
-                    <div class="col-lg-offset-5 col-lg-7">
-                    <h1>Bienvenue sur Pay My Buddy</h1>
-                    </div>
+
                 </div>
 
         </div>

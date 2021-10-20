@@ -1,15 +1,16 @@
 body{
 background-image: url("logo_small.png");
+background-color: rgb(63, 139, 238);
 min-height: 75rem;
 }
 
 
 h1{
-color: rgb(7, 59, 202);
+color: black;
 }
 
 h2
 {
-color: rgb(7, 59, 202);
+color: black;
 }
 
