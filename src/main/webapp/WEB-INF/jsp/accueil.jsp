@@ -47,9 +47,91 @@
     <div class="row">
  <div class="col-lg-offset-8 col-lg-4">
  <h1>Bienvenue sur Pay My Buddy</h1>
-
        </div>
     </div>
+
+<div class="box">
+
+            <div class="selected"><a href="connection"><button class="btn btn-lg btn-primary btn-block">add a connection</button></a></div>
+
+          </div>
+
+
+          <div class="flex">
+
+            </br>
+            <h4> Send money
+            </h4>
+
+            <div>
+              <form:form action="transfer" method="post" class="needs-validation" modelAttribute="transferForm">
+                <div class="row g-3">
+                  <div class="col-md-5">
+                    <label for="connection" class="form-label"></label>
+                    <form:select path="to" class="form-select" id="connection" required="true">
+                      <option value="">Select a connection</option>
+                      <c:forEach items="${connections}" var="connection">
+                        <option value="${connection}"> ${connection} </option>
+                      </c:forEach>
+                      </form:select>
+                      <div class="invalid-feedback">
+                        Please select a valid connection.
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="amount" class="form-label"></label>
+                    <form:input path="amount" type="number" step="0.01" class="form-control floatingInput" />
+                    <div class="invalid-feedback">
+                      Please provide a valid amount.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    </br>
+                    <form:button class="btn btn-primary btn-lg btn-block" type="submit"> Pay </form:button>
+
+                  </div>
+                </div>
+
+              </form:form>
+
+              <main>
+                </br>
+                <h2 class="display-6 text-left mb-4">My transactions</h2>
+
+                <div class="table-responsive">
+                  <table class="table text-center">
+                    <thead>
+                      <tr >
+                        <th>Connection</th>
+                        <th>Connection Name</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                         <c:forEach items="${transfers}" var="transfer">
+                         <tr>
+                         <td>${transfer.to.email} </td>
+                         <td> ${transfer.to.firstName} ${transfer.to.lastName}</td>
+                         <td> ${transfer.amountBeforeFee} €</td>
+                         </tr>
+                          </c:forEach>
+                    </tbody>
+                  </table>
+                </div>
+              </main>
+
+              <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+              </footer>
+            </div>
+          </div>
+        </div>
+
+
+
+
     <div class="row">
      <div class="col-lg-offset-5 col-lg-7">
      <h2>Transferer votre argent</h2>
